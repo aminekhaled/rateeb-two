@@ -1,0 +1,29 @@
+// Loop to create font size classes from 1px to 40px
+@for $i from 10 through 60 {
+    .font-size-#{$i} {
+      font-size: #{$i}px;
+    }
+}
+
+@for $i from 1 through 20 {
+    .border-radius-#{$i} {
+      border-radius: #{$i}px;
+    }
+}
+
+@for $i from 1 through 7 {
+    .font-weight-#{$i}00 {
+      font-weight: #{$i}00;
+    }
+}
+
+.main-text-color {
+  color: $main-color;
+}
+
+.gray-text-color {
+  color: #7E7E7E;
+}
+.dark-gray-text-color {
+  color: #5A5A5A;
+}

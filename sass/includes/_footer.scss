@@ -1,0 +1,26 @@
+.main-footer {
+    width: 100%;
+    height: auto;
+    background: url('../assets/images/footer-background-image.png') no-repeat;
+    background-size: cover;
+}
+
+.main-footer .overlay {
+    background: #0e6658c4;
+}
+.custom-input-field {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 65%;
+    outline: none;
+}
+
+.custom-input-field::placeholder {
+    color: white;
+}
+.send-btn {
+    border: 2px solid white;
+    border-radius: 0;
+    color: #fff;
+}

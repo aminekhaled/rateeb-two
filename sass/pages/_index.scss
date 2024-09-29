@@ -1,0 +1,335 @@
+.main {
+    background: url('../assets/images/main-background-img.png');
+    background-size: cover;
+    border-bottom: 7px solid $main-color;
+}
+
+.hero-section {
+    height: calc(100vh - 200px);
+    padding-top: 100px;
+}
+
+.swiper-pagination {
+    top: 60%;
+}
+
+.text-bottom-effect::before {
+    content: '';
+    display: block;
+    width: 230px;
+    height: 8px;
+    background-color: $secondary-background-color;
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    right: 50%;
+    transform: translateX(50%);
+    left: 0;
+    border-radius: 8px;
+}
+
+.text-bottom-effect.more-width::before {
+    width: 300px;
+}
+
+.text-bottom-effect.less-width::before {
+    width: 140px;
+}
+
+.why-choose-us-section {
+    background-color: $main-background-color;
+}
+
+.service-name {
+    width: 90%;
+    top: 83%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.business-text {
+    width: 85%;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.media-title {
+    bottom: 30px;
+    right: 20px;
+}
+
+.swiper-pagination.responsive-pagination {
+    top: 82%;
+}
+
+.responsive-show-all {
+    top: 93%;
+}
+
+.small-media-title {
+    bottom: 30px;
+    right: 30px;
+}
+
+.event-card {
+    border: 1.5px solid $secondary-color;
+    .event-card-content {
+        background-color: $card-bg-color;
+    }
+}
+
+.video-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-icon {
+    bottom: 20px !important;
+    left: 20px !important;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, 1fr);   /* 2 equal rows */
+    gap: 20px; /* Optional: adds space between grid items */
+    height: 440px; /* Sets the overall height to viewport height */
+    direction: ltr;
+}
+
+.first, .second {
+  grid-column: span 2; /* Both first and second divs span 2 columns */
+}
+
+.third {
+  grid-row: 1 / span 2; /* The third div spans both rows (full height) */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.client-card {
+    height: 170px;
+}
+
+.country-card {
+    margin: 0 1rem;
+}
+
+.bar-effect {
+    position: relative;
+}
+.bar-effect::before {
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: $main-color;
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    transform: translateY(-50%);
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+    .numbers-section .numbers-icon {
+        width: 15px !important;
+    }
+    .numbers-section span.font-size-48 {
+        font-size: 35px;
+    }    
+    .numbers-section p {
+        font-size: 25px;
+    }
+
+    .swiper-pagination.responsive-pagination {
+        top:85% ;
+    }    
+    
+    .responsive-show-all {
+        top: 91%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .numbers-section {
+        margin-top: 12rem !important;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .hero-text p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .swiper-pagination.responsive-pagination {
+        top:84% ;
+    }
+
+
+    .responsive-show-all {
+        top: 92% ;
+    }
+
+    .bar-effect::before {
+        left: 15%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 990px) {
+
+    .some-margin-990 {
+        margin-bottom: 20px;
+    }
+
+    .media-center-section {
+        height: 1200px;
+    }
+
+    .why-choose-us-section .heading p {
+        font-size: 18px;
+    }
+
+    .why-choose-us-card-title{
+        font-size: 20px;
+    }
+    .why-choose-us-card-text{
+        font-size: 14px;
+    }
+
+    .swiper-pagination.responsive-pagination {
+        top:79% ;
+    }
+    .responsive-show-all {
+        top: 90% ;
+    }
+
+    .custom-flex-direction-column {
+        flex-direction: column;
+        p {
+            font-size: 16px !important;
+            margin-bottom: 15px !important;
+        }
+        nav ul li a {
+            font-size: 11px !important;
+        }
+    }
+
+    .bar-effect::before {
+        left: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .media-center-section {
+        height: 1700px;
+    }
+
+    .upload {
+        margin-top: 30px;
+        margin-left: auto;
+        .upload-text {
+            font-size: 16px;
+        }
+    }
+
+    .hero-btns {
+        text-align: center;
+        a {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+    }
+
+    .hero-text h2 {
+        text-align: center;
+    }
+    .hero-text p {
+        text-align: center;
+    }
+    
+    .swiper-pagination.responsive-pagination {
+        top:88% ;
+    }
+    .responsive-show-all {
+        top: 95% ;
+    }
+
+    .custom-flex-direction-column {
+        p {
+            font-size: 16px !important;
+        }
+        nav ul li a {
+            font-size: 11px !important;
+        }
+    }
+
+    .business-text {
+        .title {
+            font-size: 12px;
+        }
+        .text {
+            font-size: 10px;
+        }
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 45% 55%; /* The first column takes 40%, the second takes 60% */
+        grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
+        gap: 10px; /* Optional: adds space between grid items */
+        height: 440px; /* Sets the overall height */
+        direction: ltr;
+    }
+    
+    .first, .second {
+      grid-column: 2 / 3; /* Both first and second divs now reside in the second column */
+    }
+    
+    .third {
+      grid-column: 1 / 2; /* The third div is in the first column */
+      grid-row: 1 / span 2; /* The third div spans both rows (full height) */
+    }
+
+    .bar-effect::before {
+        left: 13%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .country-card {
+        margin: 0 0.2rem;
+    }
+    .client-card {
+        height: 150px;
+    }
+
+    .bar-effect::before {
+        left: 8%;
+        // dfdfdf
+    }
+}
+
+
+
+
+
